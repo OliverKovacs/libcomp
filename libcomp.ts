@@ -1,23 +1,25 @@
-import { adjacency_list, undirected, dijkstra, kruskal } from "./graph";
+import { AdjacencyList, Graph, StdUndirected, dijkstra, kruskal } from "./graph";
 
-const G = undirected(adjacency_list<number, { length: number }>());
+const UndirectedAdjacencyList = StdUndirected(AdjacencyList);
 
-G.add_vertex(0)
-G.add_vertex(1)
-G.add_vertex(2)
-G.add_vertex(3)
+const g = new UndirectedAdjacencyList() as Graph<number, { length: number }>;
 
-G.add_edge(0, 1, 0)
-G.add_edge(0, 2, 1)
-G.add_edge(1, 3, 2)
-G.add_edge(2, 3, 3)
+g.add_vertex(0);
+g.add_vertex(1);
+g.add_vertex(2);
+g.add_vertex(3);
 
-G.set_edge_value(0, { length: 1 });
-G.set_edge_value(1, { length: 10 });
-G.set_edge_value(2, { length: 100 });
-G.set_edge_value(3, { length: 1 });
+g.add_edge(0, 1, 0);
+g.add_edge(0, 2, 1);
+g.add_edge(1, 3, 2);
+g.add_edge(2, 3, 3);
 
-console.log(G);
+g.set_edge_value(0, { length: 1 });
+g.set_edge_value(1, { length: 10 });
+g.set_edge_value(2, { length: 100 });
+g.set_edge_value(3, { length: 1 });
 
-console.log(dijkstra(G, 0, 3));
-console.log(kruskal(G));
+console.log(g);
+
+console.log(dijkstra(g, 0, 3));
+console.log(kruskal(g));
