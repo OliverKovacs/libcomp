@@ -30,9 +30,9 @@ List of common problems.
 - Cluster analysis
     - Hoshen–Kopelman algorithm
 
-# Cryptography
+# CTFs
 
-## Key exchange
+## Cryptography
 
 ### [Anshel–Anshel–Goldfeld key exchange](https://en.wikipedia.org/wiki/Anshel%E2%80%93Anshel%E2%80%93Goldfeld_key_exchange)
 
@@ -60,11 +60,8 @@ Bob public: $B = g^b \mod p$
 Shared private: $s = B^a \mod p = A^b \mod p$
 
 Attacks:
-- if $p$ is a [smooth](https://en.wikipedia.org/wiki/Smooth_number) integer:
-    - [Pohling-Hellman algorithm](https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm)
+- [see DLP](#dlp)
 
-## Asymetric encryption
-  
 ### [Rivest–Shamir–Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 
 Private: $p, q \in \mathbb{P}$  
@@ -77,8 +74,12 @@ Decrypt: $m \equiv c^d \pmod m$
 
 Attacks:
 - if $m$ small:
-    - factorize (SageMath, ...)
+    - factorize (SageMath, CADO-NFS)
     - [factordb](http://factordb.com/)
+- if $p$ and $q$ similar:
+    - [Fermat's factorization method](https://en.wikipedia.org/wiki/Fermat%27s_factorization_method)
+- if $p − 1$ or $q − 1$ [smooth](https://en.wikipedia.org/wiki/Smooth_number):
+    - [Pollard's p − 1 algorithm](https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm)
 - if $e$ small:
     - if m large:
         - $e$-th root of $c$
@@ -90,3 +91,35 @@ Attacks:
         - [Coppersmith's attack](https://en.wikipedia.org/wiki/Coppersmith%27s_attack)
 - if $d$ small:
     - [Wiener's attack](https://en.wikipedia.org/wiki/Wiener%27s_attack)
+
+<a name="dlp">
+
+### [Discrete logarithm problem (DLP)](https://en.wikipedia.org/wiki/Discrete_logarithm)
+</a>
+
+Let $G$ by any Group and $a, b \in G$ then $k \in \mathbb Z$ that solves $b^k = a$ is the discrete logarithm $\log_b a$.  
+
+Attacks:
+- generally:
+    - [Pollard's rho algorithm](https://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm) (SageMath)
+    - Baby-step giant-step (→ use Pollard's rho)
+- if $|G|$ is a [smooth](https://en.wikipedia.org/wiki/Smooth_number) integer:
+    - [Pohling-Hellman algorithm](https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm)
+- if in $(\mathbb Z / q \mathbb Z)^*$ with $q \in \mathbb P$:
+    - [Index calculus algorithm](https://en.wikipedia.org/wiki/Index_calculus_algorithm)
+- if in a finite field:
+    - [Function field sieve](https://en.wikipedia.org/wiki/Function_field_sieve) (CADO-NFS)
+
+## Rev / Pwn
+
+- [radare2](https://github.com/radareorg/radare2)
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
+- [angr](https://github.com/angr/angr)
+- [Z3](https://github.com/Z3Prover/z3)
+- gdb/lldb
+
+## RF
+
+- [GNU Radio](https://github.com/gnuradio/gnuradio)
+- [inspectrum](https://github.com/miek/inspectrum)
+- [urh](https://github.com/jopohl/urh)
