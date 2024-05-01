@@ -140,7 +140,7 @@ Attacks:
     - [Pollard's rho algorithm](https://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm) (SageMath)
     - Baby-step giant-step (→ use Pollard's rho instead)
 - if $|G|$ is a [smooth](https://en.wikipedia.org/wiki/Smooth_number) integer:
-    - [Pohling-Hellman algorithm](https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm)
+    - [Pohlig-Hellman algorithm](https://en.wikipedia.org/wiki/Pohlig%E2%80%93Hellman_algorithm)
 - if in $(\mathbb Z / q \mathbb Z)^*$ with $q \in \mathbb P$:
     - [Index calculus algorithm](https://en.wikipedia.org/wiki/Index_calculus_algorithm)
 - if in a finite field:
