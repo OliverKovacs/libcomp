@@ -45,6 +45,7 @@ List of useful theorems and definitions.
 - [Bézout's identitiy](https://en.wikipedia.org/wiki/B%C3%A9zout's_identity)
     - Let $a, b \in \mathbb Z, \ d = \gcd(a, b)$ then $\exists x, y \in \mathbb Z \colon ax + by = d$ and $az + bt$ are exactly multiples of $d$.
 - [Burnside's lemma](https://en.wikipedia.org/wiki/Burnside's_lemma)
+- [Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 - [de Bruijn sequence](https://en.wikipedia.org/wiki/De_Bruijn_sequence)
 - [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve)
     - $y^2 = x^3 + ax +b$
@@ -52,6 +53,7 @@ List of useful theorems and definitions.
     - For every group the order of each subgroup divides the order of the group.
 - [Mersenne prime](https://en.wikipedia.org/wiki/Mersenne_prime)
     - $M_n = 2^n - 1$
+- [Modular multiplicative inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
 - Pseudo-Mersenne prime:
     - $p \approx 2^d$
 - [Sophie Germain prime / safe prime](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes):
