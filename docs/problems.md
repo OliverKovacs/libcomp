@@ -192,6 +192,9 @@ List of tools for solving CTF challenges.
 
 ## OSINT
 
+- [Sherlock](https://github.com/sherlock-project/sherlock)
+- [overpass turbo](https://overpass-turbo.eu/)
+
 ## Web
 
 - [Burp](https://portswigger.net/burp)
