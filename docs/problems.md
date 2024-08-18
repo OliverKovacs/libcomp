@@ -164,6 +164,12 @@ Shared secret: $A^{-1}B^{-1}AB
 Attacks:
 - Solve simultaneous conjugacy equations
 
+### [Block cipher mode of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
+- GCM: galois/counter
+- CCM: CBC-MAC
+- CBC: cipher block chaining
+- ECB: electronic codebook
+
 # Tools
 
 List of tools for solving CTF challenges.
@@ -173,6 +179,7 @@ List of tools for solving CTF challenges.
 - [SageMath](https://www.sagemath.org/)
 - [CADO-NFS](https://cado-nfs.gitlabpages.inria.fr/)
 - [CyberChef](https://cyberchef.org/)
+- [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
 
 ## Rev / Pwn
 
@@ -202,3 +209,7 @@ List of tools for solving CTF challenges.
 - [Caido](https://caido.io/)
 - OpenSSL
 - nc, socat, nmap
+
+## Other
+
+- pwntools (Python automation)
