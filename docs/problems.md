@@ -6,20 +6,30 @@ List of common problems.
 
 - Amount of minimum spanning trees
     - Kirchhoff's theorem
+- Bridges
+    - Tarjan's bridge-finding algorithm
+- Eulerian path
+    - exists iff at most two vertices with odd degree
 - Hamiltonian path problem
     - Bruteforce
     - Bellman–Held–Karp algorithm
 - Longest path problem
 - Minimum cut/maximum flow
 - Minimum spanning tree (MST)
-    - Kruskual's algorithm
-    - Prim's algorithm
+    - Kruskual's algorithm $O(m \log n)$
+    - Prim's algorithm $O((n + m) \log n)$
+    - Borůvka's algorithm $O(m \log n)$
 - Shortest path problem
-    - Dijkstra's algorithm
+    - BFS $O(n + m)$
+    - Dijkstra's algorithm $O((n + m) \log n)$
+    - Bellman-Ford algorithm $O(nm)$
+    - Floyd–Warshall algorithm $O(n^3)$
+    - Johnson's algorithm $O(n (n + m) \log n)$
     - A* search algorithm
 - Traveling Salesman problem (TSP)
 
 ## Groups
+
 - Conjugacy problem
     - For $x, y \in G$ is there a $z \in G$ such that $y = zxz^{-1}$?
 - Word problem
@@ -32,11 +42,27 @@ List of common problems.
 - Basis reduction
     - Lenstra-Lenstra-Lovász (LLL) lattice basis reduction algorithm
 
-## Combinatorics
-- Knapsack problem
-    - DP
-- Partition problem
+## DP
+
+- Maximum subarray sum
+- Jump game
+- Longest common subsequence
+- Edit distance
 - Subset sum problem
+- Knapsack problem
+- Longest increasing subsequence
+- Partition problem
+
+## Sorting
+
+- Bubble sort $O(n^2)$
+- Selection sort $O(n^2)$
+    - Inv: first $k$ elements are on correct position
+- Insertion sort $O(n^2)$
+    - Inv: first $k$ elements are sorted
+- Merge sort $O(n \log n)$
+- Quicksort $O(n \log n)$ (worst case $O(n^2)$)
+- Heapsort $O(n \log n)$
 
 # Theory
 
