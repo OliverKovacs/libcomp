@@ -8,12 +8,20 @@ List of common problems.
     - Kirchhoff's theorem
 - Bridges
     - Tarjan's bridge-finding algorithm
+- Coloring
+    - Greedy
 - Eulerian path
     - exists iff at most two vertices with odd degree
 - Hamiltonian path problem
     - Bruteforce
-    - Bellman–Held–Karp algorithm
+    - Bellman-Held-Karp algorithm
 - Longest path problem
+- Matching
+    - Greedy
+    - Hopcroft-Karp
+- Metric Traveling Salesman
+    - 2-approximation (MST)
+    - 1.5-approximation (MST + perfect matching)
 - Minimum cut/maximum flow
 - Minimum spanning tree (MST)
     - Kruskual's algorithm $O(m \log n)$
@@ -67,14 +75,17 @@ List of common problems.
 # Theory
 
 List of useful theorems and definitions.
-
+- [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes'_theorem)
+    - $P(A|B) = \frac{P(B|A) P(A)}{P(B)}$
 - [Bézout's identitiy](https://en.wikipedia.org/wiki/B%C3%A9zout's_identity)
     - Let $a, b \in \mathbb Z, \ d = \gcd(a, b)$ then $\exists x, y \in \mathbb Z \colon ax + by = d$ and $az + bt$ are exactly multiples of $d$.
 - [Burnside's lemma](https://en.wikipedia.org/wiki/Burnside's_lemma)
 - [Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 - [de Bruijn sequence](https://en.wikipedia.org/wiki/De_Bruijn_sequence)
+- [Dirac's theorem](https://en.wikipedia.org/wiki/Dirac%27s_theorem_on_Hamiltonian_cycles)
 - [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve)
     - $y^2 = x^3 + ax +b$
+- [Hall's theorem](https://en.wikipedia.org/wiki/Hall's_marriage_theorem)
 - [Lagrange's theorem](https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory))
     - For every group the order of each subgroup divides the order of the group.
 - [Mersenne prime](https://en.wikipedia.org/wiki/Mersenne_prime)
@@ -203,6 +214,8 @@ List of tools for solving CTF challenges.
 ## Crypto
 
 - [SageMath](https://www.sagemath.org/)
+- [Z3](https://github.com/Z3Prover/z3)
+- [GLPK](https://www.gnu.org/software/glpk/)
 - [CADO-NFS](https://cado-nfs.gitlabpages.inria.fr/)
 - [CyberChef](https://cyberchef.org/)
 - [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
