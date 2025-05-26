@@ -6,23 +6,34 @@ List of common problems.
 
 - Amount of minimum spanning trees
     - Kirchhoff's theorem
+- Articulation points
+    - → see bridges
 - Bridges
     - Tarjan's bridge-finding algorithm
 - Coloring
     - Greedy
+- Cycle detection
+    - Floyd's cycle-finding algorithm (tortoise and hare)
+- Duplicate detection
+    - → see cycle detection
 - Eulerian path
     - exists iff at most two vertices with odd degree
 - Hamiltonian path problem
     - Bruteforce
     - Bellman-Held-Karp algorithm
-- Longest path problem
+- Long path problem
+    - N. Alon, R. Yuster, U. Zwick. Color-coding. ACM 1995.
+    - R. Williams. Finding paths of length $k$ in $O^*(2^k)$ time. IPL 2009.
+- Lowest common ancestor (LCA)
+    - → see RMQ
 - Matching
     - Greedy
-    - Hopcroft-Karp
+    - Hopcroft-Karp (bipartite graphs)
 - Metric Traveling Salesman
     - 2-approximation (MST)
     - 1.5-approximation (MST + perfect matching)
 - Minimum cut/maximum flow
+    - Ford-Fulkerson (integral capacities)
 - Minimum spanning tree (MST)
     - Kruskual's algorithm $O(m \log n)$
     - Prim's algorithm $O((n + m) \log n)$
@@ -60,6 +71,7 @@ List of common problems.
 - Knapsack problem
 - Longest increasing subsequence
 - Partition problem
+- Range minimum querry (RMQ)
 
 ## Sorting
 
@@ -72,6 +84,27 @@ List of common problems.
 - Quicksort $O(n \log n)$ (worst case $O(n^2)$)
 - Heapsort $O(n \log n)$
 
+## Geometry
+
+- Convex hull
+    - Jarvis Wrap
+    - Monotone chain
+- Smallest enclosing circle
+    - Clarkson's algorithm
+    - Welzl's algorithm
+
+## Other
+
+- Estimate frequency moments
+    - AMS sampling
+- Estimate size of subset
+    - Target shooting algorithm
+- Median
+    - Median of medians (BFPRT)
+- Primes
+    - Miller-Rabin
+    - Agrawal, Kayal, Saxena (AKS)
+
 # Theory
 
 List of useful theorems and definitions.
@@ -83,8 +116,11 @@ List of useful theorems and definitions.
 - [Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 - [de Bruijn sequence](https://en.wikipedia.org/wiki/De_Bruijn_sequence)
 - [Dirac's theorem](https://en.wikipedia.org/wiki/Dirac%27s_theorem_on_Hamiltonian_cycles)
+    - Every graph with $n \ge 3$ and minimum degree greater than $\frac{n}{2}$ is Hamiltonian.
 - [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve)
     - $y^2 = x^3 + ax +b$
+- Forbenius theorem
+    - Every $k$-regular bipartite graph has a perfect matching.
 - [Hall's theorem](https://en.wikipedia.org/wiki/Hall's_marriage_theorem)
 - [Lagrange's theorem](https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory))
     - For every group the order of each subgroup divides the order of the group.
@@ -93,6 +129,8 @@ List of useful theorems and definitions.
 - [Modular multiplicative inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
 - Pseudo-Mersenne prime:
     - $p \approx 2^d$
+- [Mycielskian](https://en.wikipedia.org/wiki/Mycielskian)
+    - For every $k \ge 2$ there is a triangle-free graph $G_k$ with $\chi(G_k) \ge k$.
 - [Sophie Germain prime / safe prime](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes):
     - $p = 2q + 1$
     - $p$ → Sophie Germain prime
@@ -240,6 +278,7 @@ List of tools for solving CTF challenges.
 
 - [Sherlock](https://github.com/sherlock-project/sherlock)
 - [overpass turbo](https://overpass-turbo.eu/)
+- [bssid-geolocator](https://github.com/gigaryte/bssid-geolocator)
 
 ## Web
 
