@@ -31,7 +31,7 @@ List of common problems.
     - Hopcroft-Karp (bipartite graphs)
 - Metric Traveling Salesman
     - 2-approximation (MST)
-    - 1.5-approximation (MST + perfect matching)
+    - Christofides algorithm: 1.5-approximation (MST + perfect matching)
 - Minimum cut/maximum flow
     - Ford-Fulkerson (integral capacities)
 - Minimum spanning tree (MST)
@@ -113,14 +113,20 @@ List of useful theorems and definitions.
 - [Bézout's identitiy](https://en.wikipedia.org/wiki/B%C3%A9zout's_identity)
     - Let $a, b \in \mathbb Z, \ d = \gcd(a, b)$ then $\exists x, y \in \mathbb Z \colon ax + by = d$ and $az + bt$ are exactly multiples of $d$.
 - [Burnside's lemma](https://en.wikipedia.org/wiki/Burnside's_lemma)
+- [Cayley–Hamilton theorem](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem)
+    - Every square matrix over a commutative ring satisfies its own characteristic equation.
 - [Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 - [de Bruijn sequence](https://en.wikipedia.org/wiki/De_Bruijn_sequence)
 - [Dirac's theorem](https://en.wikipedia.org/wiki/Dirac%27s_theorem_on_Hamiltonian_cycles)
     - Every graph with $n \ge 3$ and minimum degree greater than $\frac{n}{2}$ is Hamiltonian.
 - [Elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve)
     - $y^2 = x^3 + ax +b$
-- Forbenius theorem
+- Frobenius theorem
     - Every $k$-regular bipartite graph has a perfect matching.
+- [Farkas lemma](https://en.wikipedia.org/wiki/Farkas'_lemma)
+    - Exactly on of $Ax = b \land x \ge 0$ or $A^\top y \ge 0 \land b^\top y \ge 0$ has a solution.
+- [Fredholm alternative](https://en.wikipedia.org/wiki/Fredholm_alternative)
+    - Exactly one of $A x = b$ or $A^\top y = 0$ with $y^\top b \neq 0$ has a solution.
 - [Hall's theorem](https://en.wikipedia.org/wiki/Hall's_marriage_theorem)
 - [Lagrange's theorem](https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory))
     - For every group the order of each subgroup divides the order of the group.
@@ -131,6 +137,7 @@ List of useful theorems and definitions.
     - $p \approx 2^d$
 - [Mycielskian](https://en.wikipedia.org/wiki/Mycielskian)
     - For every $k \ge 2$ there is a triangle-free graph $G_k$ with $\chi(G_k) \ge k$.
+- [Riemann series theorem](https://en.wikipedia.org/wiki/Riemann_series_theorem)
 - [Sophie Germain prime / safe prime](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes):
     - $p = 2q + 1$
     - $p$ → Sophie Germain prime
@@ -153,6 +160,9 @@ List of useful theorems and definitions.
     - multiplication is distributive with respect to addition
 - [Characteristic](https://en.wikipedia.org/wiki/Characteristic_(algebra)):
     - $\text{char}(R)$ = smallest $n$ such that $n * 1 = 0$
+
+### [Integral domain (Integritätsbereich)](https://en.wikipedia.org/wiki/Integral_domain)
+- Zero divisor free commutative ring
 
 ### [Finite field](https://en.wikipedia.org/wiki/Finite_field)
 - Field with finite elements
@@ -244,50 +254,3 @@ Attacks:
 - CCM: CBC-MAC
 - CBC: cipher block chaining
 - ECB: electronic codebook
-
-# Tools
-
-List of tools for solving CTF challenges.
-
-## Crypto
-
-- [SageMath](https://www.sagemath.org/)
-- [Z3](https://github.com/Z3Prover/z3)
-- [GLPK](https://www.gnu.org/software/glpk/)
-- [CADO-NFS](https://cado-nfs.gitlabpages.inria.fr/)
-- [CyberChef](https://cyberchef.org/)
-- [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
-
-## Rev / Pwn
-
-- [radare2](https://github.com/radareorg/radare2)
-- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
-- [angr](https://github.com/angr/angr)
-- [Z3](https://github.com/Z3Prover/z3)
-- [Frida](https://frida.re/)
-- gdb/lldb
-- [Vineflower](https://github.com/Vineflower/vineflower) (Java)
-
-## RF
-
-- [GNU Radio](https://github.com/gnuradio/gnuradio)
-- [inspectrum](https://github.com/miek/inspectrum)
-- [urh](https://github.com/jopohl/urh)
-
-## OSINT
-
-- [Sherlock](https://github.com/sherlock-project/sherlock)
-- [overpass turbo](https://overpass-turbo.eu/)
-- [bssid-geolocator](https://github.com/gigaryte/bssid-geolocator)
-
-## Web
-
-- [Burp](https://portswigger.net/burp)
-- [ZAP](https://www.zaproxy.org/)
-- [Caido](https://caido.io/)
-- OpenSSL
-- nc, socat, nmap
-
-## Other
-
-- pwntools (Python automation)
